@@ -26,19 +26,20 @@
   You can extend it by adding to taginputContainer class.
 
 ## api
-  ### TagInput(input)
-    binds to a text input element
 
-  ### addtag(tag)
-    adds a tag to the tag input from js
+### TagInput(input)
+  binds to a text input element
 
-  ### removetag(tag)
-    removes a tag from the tag input from js
+### addtag(tag)
+  adds a tag to the tag input from js
 
-  ### event: 'add'
-    Called when a tag is added
+### removetag(tag)
+  removes a tag from the tag input from js
 
-  ### removed: 'removed'
-    Called when a tag is removed`
+### event: 'add'
+  Called when a tag is added
+
+### removed: 'removed'
+  Called when a tag is removed`
 
 
