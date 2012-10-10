@@ -1,0 +1,43 @@
+.taginputContainer {
+	background-color: white;
+	padding: 4px;
+	border: 1px solid black;
+	display: inline-block;
+	width: 100%;
+}
+
+.taginputContainer input, 
+.taginputContainer input:focus {
+	margin-top: 2px;
+	padding: 0px;
+	border: 1px solid white;
+	outline: none;
+}
+
+.taginputContainer ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	display: inline;
+}
+
+.taginputContainer ul li {
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	border-radius: 5px;
+	padding: 0px;
+	border: 1px solid #545454;
+	background-color: #dcffdc;
+}
+
+.taginputContainer ul li a:link, 
+.taginputContainer ul li a:visited, 
+.taginputContainer ul li a:active {
+	color: #545454;
+	opacity: 0.5;
+	margin-left: 3px;
+	text-decoration: none;
+}
+
