@@ -1,7 +1,7 @@
 
 # tag-input
 
-  Turns a text input element into a pretty tags input.
+  A [component](http://github.com/component/component) that turns a text input element into a pretty tags input.
   Enables you to work with any MVC framework using simple events or you can get the tags from the inner model.
 
   ``` javascript
@@ -21,6 +21,10 @@
 
   ```
 
+## Install
+  ```
+    Component install tomerdmnt/tag-input
+  ```
 ## Notes about style
   The pseudo input style is very basic, so you can adjust its looks to your site, You can extend it by adding to taginputContainer class.
 
