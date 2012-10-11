@@ -8,7 +8,7 @@
 
 ## Install
   ```
-    Component install tomerdmnt/tag-input
+    component install tomerdmnt/tag-input
   ```
 
 ## Example
