@@ -4,7 +4,7 @@
   A [component](http://github.com/component/component) that turns a text input element into a pretty tags input.
   Enables you to work with any MVC framework using simple events or you can get the tags from the inner model.
 
-  http://raw.github.com/tomerdmnt/tag-input/master/screenshot.jpg
+  ![Tags Input](http://raw.github.com/tomerdmnt/tag-input/master/screenshot.jpg)
 
 ## Install
   ```
