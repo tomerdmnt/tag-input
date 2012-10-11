@@ -4,6 +4,11 @@
 	display: inline-block;
 	padding: 2px;
 	width: 100%;
+	-webkit-user-select: none;
+  	-moz-user-select: none;
+    	-ms-user-select: none;
+      	-o-user-select: none;
+        user-select: none;
 }
 
 .taginputContainer input, 
