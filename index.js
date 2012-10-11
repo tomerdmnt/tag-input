@@ -23,10 +23,12 @@ function TagInput(input, opts) {
   input.parentNode.removeChild(input)
   this.view.container.appendChild(input)
 
-  input.onchange = function (e) {
-    e.preventDefault()
-    self.addtag(e.target.value)
-    e.target.value = ''
+  input.onkeyup = function (e) {
+    if (e.which === 13) {
+      e.preventDefault()
+      self.addtag(e.target.value)
+      e.target.value = ''
+    }
   }
 }
 
