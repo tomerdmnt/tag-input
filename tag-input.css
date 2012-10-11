@@ -1,8 +1,8 @@
 .taginputContainer {
-	background-color: white;
-	padding: 4px;
+	font-size: 0.78em;
 	border: 1px solid black;
 	display: inline-block;
+	padding: 2px;
 	width: 100%;
 }
 
@@ -27,7 +27,7 @@
 	margin-bottom: 2px;
 	margin-right: 2px;
 	border-radius: 5px;
-	padding: 0px;
+	padding: 1px;
 	border: 1px solid #545454;
 	background-color: #dcffdc;
 }

@@ -2,35 +2,36 @@ var Emitter = require('emitter')
 
 module.exports = TagInput
 
+Emitter(TagInput.prototype)
+
 function TagInput(input, opts) {
   if (!(this instanceof TagInput)) return new TagInput(input, opts)
+  var self = this
   this.opts = opts || {}
 
   this.model = { tags: [] }
   this.view = { container: null, tags: null, input: input }
 
-  build()
+  this.view.container = document.createElement('div')
+  this.view.container.className = 'taginputContainer'
+  this.view.container.style = input.style
+  this.view.tags = document.createElement('ul')
 
-  function build() {
-    this.view.container = document.createElement('div')
-    this.view.container.className = 'taginputContainer'
-    this.view.tags = document.createElement('ul')
+  this.view.container.appendChild(this.view.tags)
+  input.parentNode.insertBefore(this.view.container, input)
 
-    this.view.container.appendChild(this.view.tags)
-    input.parentNode.insertBefore(this.view.container, input)
+  input.parentNode.removeChild(input)
+  this.view.container.appendChild(input)
 
-    input.parentNode.removeChild(input)
-    this.view.container.appendChild(input)
-
-    input.onchange = function (e) {
-      e.preventDefault()
-      me.addtag(e.target.value)
-      e.target.value = ''
-    }
+  input.onchange = function (e) {
+    e.preventDefault()
+    self.addtag(e.target.value)
+    e.target.value = ''
   }
 }
 
 TagInput.prototype.addtag = function (tag) {
+  var self = this
   if (this.model.tags.indexOf(tag) !== -1)
     return
 
@@ -41,7 +42,7 @@ TagInput.prototype.addtag = function (tag) {
   li.innerText = tag
   li.onclick = function (e) {
     e.preventDefault()
-    this.view.input.focus()
+    self.view.input.focus()
   }
 
   var del = document.createElement('a')
