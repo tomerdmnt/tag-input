@@ -21,9 +21,8 @@
 
   ```
 
-## css
-  The pseudo input decoration is basic for now.
-  You can extend it by adding to taginputContainer class.
+## Notes about style
+  The pseudo input style is very basic, so you can adjust its looks to your site, You can extend it by adding to taginputContainer class.
 
 ## api
 
