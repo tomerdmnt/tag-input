@@ -42,7 +42,7 @@
 ### event: 'add'
   Called when a tag is added
 
-### removed: 'removed'
+### event: 'removed'
   Called when a tag is removed`
 
 
