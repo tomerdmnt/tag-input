@@ -29,6 +29,13 @@ function TagInput(input, opts) {
       self.addtag(e.target.value)
       e.target.value = ''
     }
+    if (e.which === 8) {
+      e.preventDefault();
+      var currentTags = self.tags()
+      if (this.value.length === 0 && currentTags.length > 0) {
+        self.removetag(currentTags[currentTags.length - 1])
+      }
+    }
   }
 }
 
