@@ -26,8 +26,10 @@ function TagInput(input, opts) {
       e.target.value = '';
       return false
     }
+  };
+
+  input.onkeydown = function (e) {
     if (e.which === 8) {
-      e.preventDefault();
       var currentTags = self.tags();
       if (this.value.length === 0 && currentTags.length > 0) {
         self.removetag(currentTags[currentTags.length - 1]);
