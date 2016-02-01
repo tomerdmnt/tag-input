@@ -1,0 +1,28 @@
+{
+  "name": "tag-input",
+  "version": "1.0.0",
+  "description": "Turns a text input into a pretty Evernote like tags input",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gucheen/tag-input.git"
+  },
+  "keywords": [
+    "tags",
+    "tag",
+    "input",
+    "ui"
+  ],
+  "author": "guchengf@live.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gucheen/tag-input/issues"
+  },
+  "homepage": "https://github.com/gucheen/tag-input#readme"
+}
